@@ -42,7 +42,7 @@ class PetFriends:
             result = res.text
         return status, result
 
-    def add_new_pet(self, auth_key: json, name: str, animal_type: str, age: int, pet_photo: str) -> json:
+    def add_new_pet(self, auth_key: json, name: str, animal_type: str, age: str, pet_photo: str) -> json:
         '''Method that sends data to the server to add a pet, it's name, age, type and image. As response it gets
         a JSON with new pet data'''
 
