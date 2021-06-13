@@ -1,0 +1,2 @@
+Description: Python code that sends api requests using settings. The best stuff is in 'tests' folder. It contains simple API tests that work using PyTest package.
+Requirements: Python 3 + pytest, json, requests, requests-toolbelt packages
