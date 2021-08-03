@@ -25,7 +25,7 @@ class PetFriends:
             result = res.text
         return status, result
 
-    def create_pet_simple(self, auth_key: json, name: str, animal_type: str, age: int) -> json:
+    def create_pet_simple(self, auth_key: json, name: str, animal_type: str, age: str) -> json:
         '''method that adds a new pet without a photo returning status code  and a JSON with a successfully
          created pet'''
         headers = {'auth_key': auth_key['key']}
@@ -79,7 +79,7 @@ class PetFriends:
             result = res.text
         return status, result
 
-    def update_pet_info(self, auth_key: json, pet_id: str, name: str, animal_type: str, age: int) -> json:
+    def update_pet_info(self, auth_key: json, pet_id: str, name: str, animal_type: str, age: str) -> json:
         '''Method that sends a quarry to update a pet with corresponding ID returning status code and a JSON with
         updated pet info'''
 
